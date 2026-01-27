@@ -5,7 +5,7 @@ import numpy as np
 import tempfile
 
 # Load trained model
-model = YOLO("C:/Coriolis/road_demo/Model/best.pt")  # change train2 if needed
+model = YOLO("Model/best.pt")  # change train2 if needed
 
 st.title("Roadside Pothole Detection System")
 
@@ -51,5 +51,6 @@ else:
                 frame = r.plot()
 
             stframe.image(frame, channels="BGR")
+
 
         cap.release()
